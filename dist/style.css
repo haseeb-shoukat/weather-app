@@ -3,7 +3,7 @@
 * {
     font-weight: 400;
     font-family: "Roboto";
-    font-size: 20px;
+    font-size: 1rem;
     color: white;
     text-shadow: 1px 2px #000000;
 }
@@ -26,7 +26,7 @@ body {
     grid-template-rows: auto 1fr;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.302);
+    background-color: rgba(0, 0, 0, 0.217);
 }
 
 .search-bar {
@@ -44,19 +44,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 
 input, button {
     padding: 2px 3px;
-    font-size: 15px;
+    font-size: 1rem;
     color: black;
     text-shadow: none;
 }
 
 button {
     padding: 2px 5px;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 
 input:focus {
@@ -67,14 +68,15 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
 .location {
-    font-size: 50px;
+    font-size: 2.8rem;
 }
 
 .weather {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .temperature {
@@ -83,7 +85,7 @@ input:focus {
 }
 
 .temp {
-    font-size: 100px;
+    font-size: 5.5rem;
     padding-right: 30px;
 }
 
@@ -95,12 +97,57 @@ input:focus {
 }
 
 .locWeather {
-    width: 305px;
+    min-width: 305px;
     text-align: center;
 }
 
 .temp::after {
     content: attr(data-value);
-    font-size: 35px;
+    font-size: 2rem;
     position: absolute;
 }
+
+#image {
+    width: 40px;
+    height: 40px;
+}
+
+.radio-box {
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.scale {
+    flex-grow: 1;
+    padding: 0px 12px;
+    color: black;
+    text-shadow: none;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    cursor: pointer;
+}
+
+.celsius {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ab0ed+0,9fd8ef+49,e4f5fc+50,bfe8f9+50,e4f5fc+50 */
+    background: rgb(42,176,237); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(42,176,237,1) 0%, rgba(159,216,239,1) 49%, rgba(228,245,252,1) 50%, rgba(191,232,249,1) 50%, rgba(228,245,252,1) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(42,176,237,1) 0%,rgba(159,216,239,1) 49%,rgba(228,245,252,1) 50%,rgba(191,232,249,1) 50%,rgba(228,245,252,1) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(42,176,237,1) 0%,rgba(159,216,239,1) 49%,rgba(228,245,252,1) 50%,rgba(191,232,249,1) 50%,rgba(228,245,252,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ab0ed', endColorstr='#e4f5fc',GradientType=1 ); /* IE6-9 */
+}
+
+.fahrenheit {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e4f5fc+50,bfe8f9+50,e4f5fc+50,9fd8ef+51,2ab0ed+100 */
+    background: rgb(228,245,252); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(228,245,252,1) 50%, rgba(191,232,249,1) 50%, rgba(228,245,252,1) 50%, rgba(159,216,239,1) 51%, rgba(42,176,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(228,245,252,1) 50%,rgba(191,232,249,1) 50%,rgba(228,245,252,1) 50%,rgba(159,216,239,1) 51%,rgba(42,176,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(228,245,252,1) 50%,rgba(191,232,249,1) 50%,rgba(228,245,252,1) 50%,rgba(159,216,239,1) 51%,rgba(42,176,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=1 ); /* IE6-9 */
+}
+  
